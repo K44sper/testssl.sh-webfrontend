@@ -27,14 +27,14 @@ resultDirJSON = "result/json"
 resultDirHTML = "result/html"
 checkCmd = "testssl.sh/testssl.sh"
 checkArgs = ["--quiet", "--logfile=" + logDir, "--jsonfile=" + resultDirJSON]
-checkTimeout = 90
+checkTimeout = 180
 rendererCmd = "aha"
 rendererArgs = ["-n"]
-rendererTimeout = 10
+rendererTimeout = 15
 protocols = ["ftp", "smtp", "pop3", "imap", "xmpp", "telnet", "ldap"]
 reHost = re.compile("^[a-z0-9_][a-z0-9_\-]+(\.[a-z0-9_\-]+)*$")
 preflightRequest = True
-preflightTimeout = 10
+preflightTimeout = 15
 application.debug = False
 application.secret_key = urandom(32)
 #####################
